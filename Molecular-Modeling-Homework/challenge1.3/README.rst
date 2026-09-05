@@ -49,9 +49,7 @@ MACE: <module 'mace' from '/home/compchemisteman/miniforge3/envs/molmatmodel/lib
 ::RUN::
 	python at_en_mace_EMT_AI-Ass_New.py > at_en_mace_EMT_New.py_logfile
 
-::CONCLUSION::
 
-================================================================================
 SUMMARY TABLE
 ================================================================================
 
