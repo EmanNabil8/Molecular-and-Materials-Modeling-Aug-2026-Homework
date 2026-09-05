@@ -1,0 +1,13 @@
+Successfully read 8 atoms from c.vasp
+
+Starting atom relaxation by ASE
+
+Final results
+  Total Energy                  : -1999.821951 eV
+  ASE-style max force (norm)    : 0.000015 eV/Å
+  QE-style max force            : 0.000015 eV/Å
+  Pressure                      : 30.418876 kbar
+
+Final relaxed structure saved to: c8_relaxed_structure.vasp
+
+Relaxation complete

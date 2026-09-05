@@ -1,0 +1,70 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+======================================================================
+NITROGEN MOLECULE (N₂) - MACE CALCULATION
+======================================================================
+Using Materials Project MACE for MACECalculator with /home/compchemisteman/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+
+Optimizing N₂ with MACE
+Initial N-N distance: 1.1000 Å
+      Step     Time          Energy          fmax
+BFGS:    0 14:35:53      -16.213922        1.873874
+BFGS:    1 14:35:53      -16.124224        4.461809
+BFGS:    2 14:35:53      -16.224463        0.482050
+BFGS:    3 14:35:53      -16.225212        0.159567
+BFGS:    4 14:35:53      -16.225301        0.003069
+
+MACE Results:
+  Optimized N-N bond length: 1.1124 Å
+  N atom energy:              -2.9562 eV
+  N₂ molecule energy:         -16.2253 eV
+  Dissociation energy:        10.3130 eV
+
+======================================================================
+MACE VIBRATIONAL ANALYSIS
+======================================================================
+
+MACE vibrational frequencies:
+  Mode 1: 1.957840681327146e-06j
+  Mode 2: 1.3213356883547119e-14j
+  Mode 3: (2.432903363585484e-07+0j)
+  Mode 4: (18.174511826302865+0j)
+  Mode 5: (18.174511826305924+0j)
+  Mode 6: (2347.0863518172964+0j)
+
+Warning: unexpected number of positive frequencies.
+
+N-N stretching frequency: 2347.09 cm⁻¹
+
+======================================================================
+COMPARISON WITH REFERENCE
+======================================================================
+
+N-N Bond Length:
+  Reference: 1.0980 Å
+  MACE:      1.1124 Å
+  Error:     0.0144 Å (1.31%)
+
+Dissociation Energy:
+  Reference: 9.76 eV
+  MACE:      10.3130 eV
+  Error:     0.5530 eV (5.67%)
+
+N-N Stretching Frequency:
+  Reference: 2358.57 cm⁻¹
+  MACE:      2347.09 cm⁻¹
+  Error:     11.48 cm⁻¹ (0.49%)
+
+======================================================================
+SUMMARY
+======================================================================
+Property                       Reference       MACE           
+------------------------------------------------------------
+N-N Bond Length (Å)            1.0980          1.1124         
+Dissociation Energy (eV)       9.76            10.3130        
+N-N Frequency (cm⁻¹)           2358.57         2347.09        
+
+Optimization and vibrational analysis complete.
+Files:
+  - N2_opt_mace.traj
+  - N2_vib_mace.*

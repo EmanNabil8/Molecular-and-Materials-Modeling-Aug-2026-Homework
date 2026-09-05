@@ -1,0 +1,102 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+
+[1m================================================================================[0m
+[1m   MACE Model Analyzer   [0m
+[1m================================================================================[0m
+
+[0;34mModels directory:[0m /home/compchemisteman/.cache/mace
+[0;34mDevice:[0m cpu
+[0;34mTest molecules:[0m H2O, CH4, NH3, CO2, CH3CH2OH, C6H6
+
+[1mFound 1 models[0m
+
+================================================================================
+
+[0;36m────────────────────────────────────────────────────────────────────────────────[0m
+[1m[1/1] Analyzing: 20231203mace128L1_epoch199model[0m
+[0;36m────────────────────────────────────────────────────────────────────────────────[0m
+  [0;34mSize:[0m 42.4 MB
+  [0;34mModified:[0m 2026-08-31 10:36:44
+  [0;34mArchitecture:[0m 128
+  [0;34mLayers:[0m L1
+  [0;34mType:[0m General
+  [0;34mElements supported:[0m Al, C, Cl, H, N, Na, O, Si
+  [0;34mElement count:[0m 8
+  [0;34mTesting on 6 molecules:[0m
+  [0;32m✓ Model loaded successfully[0m
+           H2O: -14.159366 eV (0.123s) [O, H]
+           CH4: -23.912776 eV (0.170s) [C, H]
+           NH3: -19.509018 eV (0.098s) [N, H]
+           CO2: -22.777649 eV (0.062s) [C, O]
+      CH3CH2OH: -47.152156 eV (0.132s) [C, O, H]
+          C6H6: -75.705334 eV (0.173s) [C, H]
+
+  [0;32m✓ Model summary:[0m
+    Success: 6/6 molecules
+    Total time: 0.758s
+    Energy range: -75.705334 to -14.159366 eV
+    Avg time per molecule: 0.126s
+    Elements detected: Al, C, Cl, H, N, Na, O, Si
+
+[1m================================================================================[0m
+[1m   ANALYSIS REPORT   [0m
+[1m================================================================================[0m
+
+[0;36m1. Model Overview:[0m
+Model Name                         Size               Type        Elements     Arch   Layers
+-----------------------------------------------------------------------------------------------
+20231203mace128L1_epoch199mo      42.4MB            General Al, C, Cl, H, N (+3)      128       L1
+
+[0;36m2. Element Coverage Summary:[0m
+Element       Frequency       Tested in    Models supporting
+------------------------------------------------------------
+Al                    1                                    1/1
+C                     1 CH4, CO2, CH3CH2OH (+1)                    1/1
+Cl                    1                                    1/1
+H                     1 H2O, CH4, NH3 (+2)                    1/1
+N                     1             NH3                    1/1
+Na                    1                                    1/1
+O                     1 H2O, CO2, CH3CH2OH                    1/1
+Si                    1                                    1/1
+
+[0;36m3. Performance Comparison:[0m
+Model                             Success  Total Time (s)    Avg Time (s)        Elements
+------------------------------------------------------------------------------------------
+20231203mace128L1_epoch199mo            6/6           0.758           0.126               8
+
+[0;36m4. Energy Comparison (eV):[0m
+    Molecule 20231203mace128L1_ep...
+----------------------------------
+         H2O             -14.159366
+         CH4             -23.912776
+         NH3             -19.509018
+         CO2             -22.777649
+    CH3CH2OH             -47.152156
+        C6H6             -75.705334
+
+[0;36m5. Performance Summary:[0m
+  [0;32mFastest model:[0m 20231203mace128L1_epoch199model (0.126s per molecule)
+  [0;32mMost elements supported:[0m 20231203mace128L1_epoch199model (8 elements)
+  [0;32mSmallest model:[0m 20231203mace128L1_epoch199model (42.4 MB)
+  [0;32mLargest model:[0m 20231203mace128L1_epoch199model (42.4 MB)
+
+[0;36m6. Recommendations:[0m
+  • For quick calculations: 20231203mace128L1_epoch199model
+  • For broad element coverage: 20231203mace128L1_epoch199model (8 elements)
+  • For maximum accuracy: 20231203mace128L1_epoch199model (largest model)
+
+[0;36m7. Detailed Results:[0m
+  • Run 'python mace_calc.py --list' to see all models
+  • Run 'python mace_calc.py [molecule] [model]' for specific calculations
+  • Element coverage detected by testing molecules
+
+[0;32m================================================================================[0m
+[0;32m✓ Analysis complete![0m
+[0;32m================================================================================[0m
+
+[0;36mUsage examples:[0m
+  python model_analyzer.py
+  python model_analyzer.py --device cuda
+  python model_analyzer.py --export
+  python model_analyzer.py --silent
+  python model_analyzer.py --config my_config.txt

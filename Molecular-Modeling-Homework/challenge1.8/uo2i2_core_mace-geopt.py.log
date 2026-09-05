@@ -1,0 +1,10 @@
+[1;33m⚠ No MACE model found. Please specify path.[0m
+
+[0;32m================================================================================[0m
+[0;32m[1m  UO₂I₂(OH₂)₂ MACE Optimization  [0m
+[0;32m================================================================================[0m
+
+[0;34mStructure information:[0m
+  Atoms: 11
+  Elements: {'H', 'I', 'U', 'O'}
+[0;31m✗ Model not found: None[0m

@@ -1,0 +1,46 @@
+&CONTROL
+   calculation      = 'scf'
+   verbosity        = 'low'
+   tstress          = .true.
+   tprnfor          = .true.
+   outdir           = './tmp'
+   prefix           = 'si'
+   etot_conv_thr    = 1e-05
+   forc_conv_thr    = 0.0005
+   pseudo_dir       = './'
+/
+&SYSTEM
+   ibrav            = 0
+   nat              = 2
+   ntyp             = 1
+   ecutwfc          = 65
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'gauss'
+/
+&ELECTRONS
+   conv_thr         = 1e-10
+/
+&IONS
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Si 28.085 Si.upf
+
+K_POINTS automatic
+15 15 15  0 0 0
+
+CELL_PARAMETERS angstrom
+0.00000000000000 2.73495408200623 2.73495408200622
+2.73471757879556 0.00009263985937 2.73486144214685
+2.73471757879556 2.73486144214685 0.00009263985937
+
+ATOMIC_POSITIONS angstrom
+Si 1.3927800460 4.1024311230 4.1024311230  
+Si 0.0249437214 0.0000000000 0.0000000000  
+

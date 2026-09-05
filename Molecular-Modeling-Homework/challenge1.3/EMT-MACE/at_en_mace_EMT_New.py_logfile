@@ -1,0 +1,163 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+Using Materials Project MACE for MACECalculator with /home/compchemisteman/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+================================================================================
+DIATOMIC MOLECULE ATOMIZATION ENERGIES: EMT vs MACE (CPU)
+================================================================================
+
+================================================================================
+Molecule: H2 (diatomic H₂)
+Experimental: bond length = 0.7410 Å, atomization energy = 4.52 eV
+================================================================================
+
+--- EMT Calculation ---
+      Step     Time          Energy          fmax
+BFGS:    0 11:20:59        1.146716        4.112063
+BFGS:    1 11:20:59        1.294229        5.110222
+BFGS:    2 11:20:59        1.078244        1.134045
+BFGS:    3 11:20:59        1.071786        0.479510
+BFGS:    4 11:20:59        1.070545        0.025982
+BFGS:    5 11:20:59        1.070541        0.000550
+  Optimized bond length: 0.7791 Å
+  Atom energy:           3.2100 eV
+  Molecule energy:       1.0705 eV
+  Atomization energy:    5.3495 eV
+  Optimization steps:    5
+
+--- MACE Calculation (CPU) ---
+      Step     Time          Energy          fmax
+BFGS:    0 11:21:00       -6.523522        0.274205
+BFGS:    1 11:21:00       -6.524482        0.023881
+BFGS:    2 11:21:00       -6.524490        0.001011
+  Optimized bond length: 0.7472 Å
+  Atom energy:           -1.1590 eV
+  Molecule energy:       -6.5245 eV
+  Atomization energy:    4.2065 eV
+  Optimization steps:    2
+
+--- Comparison with Experiment ---
+  EMT bond length:  0.7791 Å  (Δ = +0.0381 Å, 5.14%)
+  MACE bond length: 0.7472 Å  (Δ = +0.0062 Å, 0.84%)
+  EMT atomization:  5.3495 eV (Δ = +0.8295 eV, 18.35%)
+  MACE atomization: 4.2065 eV (Δ = -0.3135 eV, 6.94%)
+
+================================================================================
+Molecule: N2 (diatomic N₂)
+Experimental: bond length = 1.0980 Å, atomization energy = 9.76 eV
+================================================================================
+
+--- EMT Calculation ---
+      Step     Time          Energy          fmax
+BFGS:    0 11:21:00        0.440344        3.251800
+BFGS:    1 11:21:00        0.264361        0.347497
+BFGS:    2 11:21:00        0.262860        0.080535
+BFGS:    3 11:21:00        0.262777        0.001453
+  Optimized bond length: 0.9981 Å
+  Atom energy:           5.1000 eV
+  Molecule energy:       0.2628 eV
+  Atomization energy:    9.9372 eV
+  Optimization steps:    3
+
+--- MACE Calculation (CPU) ---
+      Step     Time          Energy          fmax
+BFGS:    0 11:21:00      -16.213922        1.873874
+BFGS:    1 11:21:00      -16.124224        4.461809
+BFGS:    2 11:21:00      -16.224463        0.482050
+BFGS:    3 11:21:00      -16.225212        0.159567
+BFGS:    4 11:21:00      -16.225301        0.003069
+  Optimized bond length: 1.1124 Å
+  Atom energy:           -2.9562 eV
+  Molecule energy:       -16.2253 eV
+  Atomization energy:    10.3130 eV
+  Optimization steps:    4
+
+--- Comparison with Experiment ---
+  EMT bond length:  0.9981 Å  (Δ = -0.0999 Å, 9.10%)
+  MACE bond length: 1.1124 Å  (Δ = +0.0144 Å, 1.31%)
+  EMT atomization:  9.9372 eV (Δ = +0.1772 eV, 1.82%)
+  MACE atomization: 10.3130 eV (Δ = +0.5530 eV, 5.67%)
+
+================================================================================
+Molecule: O2 (diatomic O₂)
+Experimental: bond length = 1.2080 Å, atomization energy = 5.12 eV
+================================================================================
+
+--- EMT Calculation ---
+      Step     Time          Energy          fmax
+BFGS:    0 11:21:00        0.801867        2.996958
+BFGS:    1 11:21:00        0.634311        0.780930
+BFGS:    2 11:21:00        0.625383        0.209243
+BFGS:    3 11:21:00        0.624751        0.010126
+BFGS:    4 11:21:00        0.624749        0.000122
+  Optimized bond length: 1.1003 Å
+  Atom energy:           4.6000 eV
+  Molecule energy:       0.6247 eV
+  Atomization energy:    8.5753 eV
+  Optimization steps:    4
+
+--- MACE Calculation (CPU) ---
+      Step     Time          Energy          fmax
+BFGS:    0 11:21:00       -9.663555        2.079414
+BFGS:    1 11:21:00       -9.662120        1.647507
+BFGS:    2 11:21:01       -9.688117        0.350024
+BFGS:    3 11:21:01       -9.689271        0.033579
+BFGS:    4 11:21:01       -9.689281        0.002483
+  Optimized bond length: 1.2367 Å
+  Atom energy:           -2.0815 eV
+  Molecule energy:       -9.6893 eV
+  Atomization energy:    5.5264 eV
+  Optimization steps:    4
+
+--- Comparison with Experiment ---
+  EMT bond length:  1.1003 Å  (Δ = -0.1077 Å, 8.92%)
+  MACE bond length: 1.2367 Å  (Δ = +0.0287 Å, 2.37%)
+  EMT atomization:  8.5753 eV (Δ = +3.4553 eV, 67.49%)
+  MACE atomization: 5.5264 eV (Δ = +0.4064 eV, 7.94%)
+
+================================================================================
+Molecule: F2 (diatomic F₂)
+Experimental: bond length = 1.4120 Å, atomization energy = 1.60 eV
+================================================================================
+
+--- EMT Calculation ---
+  EMT not available for F: No EMT-potential for F
+
+--- MACE Calculation (CPU) ---
+      Step     Time          Energy          fmax
+BFGS:    0 11:21:01       -3.975894        0.445161
+BFGS:    1 11:21:01       -3.980404        0.274950
+BFGS:    2 11:21:01       -3.983749        0.039875
+BFGS:    3 11:21:01       -3.983798        0.013129
+BFGS:    4 11:21:01       -3.983803        0.000615
+  Optimized bond length: 1.4559 Å
+  Atom energy:           -2.2831 eV
+  Molecule energy:       -3.9838 eV
+  Atomization energy:    -0.5825 eV
+  Optimization steps:    4
+
+--- Comparison with Experiment ---
+  EMT: not available
+  MACE bond length: 1.4559 Å  (Δ = +0.0439 Å, 3.11%)
+  EMT: not available
+  MACE atomization: -0.5825 eV (Δ = -2.1825 eV, 136.40%)
+
+================================================================================
+SUMMARY TABLE
+================================================================================
+Molecule   Exp d (Å)  Exp E (eV)   | EMT d (Å)  EMT E (eV)   EMT st   | MACE d (Å) MACE E (eV)  MACE st 
+--------------------------------------------------------------------------------------------------------
+H2         0.7410     4.52         | 0.7791     5.3495       5        | 0.7472     4.2065       2       
+N2         1.0980     9.76         | 0.9981     9.9372       3        | 1.1124     10.3130      4       
+O2         1.2080     5.12         | 1.1003     8.5753       4        | 1.2367     5.5264       4       
+F2         1.4120     1.60         | N/A        N/A          N/A      | 1.4559     -0.5825      4       
+
+Note: 'steps' = number of BFGS optimization steps.
+EMT does not support all elements (e.g., F). MACE supports all listed diatomics.
+
+================================================================================
+ANALYSIS
+================================================================================
+EMT (only supported molecules): avg bond length error = 7.72%, avg atomization error = 29.22%
+MACE (all molecules): avg bond length error = 1.91%, avg atomization error = 39.24%
+
+Done. Trajectory files saved for each molecule and method.

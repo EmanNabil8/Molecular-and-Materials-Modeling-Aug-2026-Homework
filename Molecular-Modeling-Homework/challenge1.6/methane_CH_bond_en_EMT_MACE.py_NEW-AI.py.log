@@ -1,0 +1,11 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+======================================================================
+METHANE C-H BOND ENERGY - EMT vs MACE COMPARISON
+======================================================================
+
+-----------------------------------
+EMT CALCULATIONS
+-----------------------------------
+Methane Energy: 1.7668 eV
+Optimized C-H bond length in methane: 1.1515 Å
+Methyl Radical Energy: 1.8106 eV

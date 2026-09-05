@@ -1,0 +1,24 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+
+============================================================
+Molecule: H2O
+Model: 20231203mace128L1_epoch199model
+Device: cpu
+============================================================
+
+✓ Calculation completed in 0.653 seconds
+
+Energy:
+  -14.15936618 eV
+  -1366.1664 kJ/mol
+  -326.5221 kcal/mol
+
+Forces (eV/Å):
+  O0: [0.000000, 0.000000, 0.226166]
+  H1: [0.000000, 0.175429, -0.113083]
+  H2: [0.000000, -0.175429, -0.113083]
+
+Force magnitudes (eV/Å):
+  O0: 0.226166
+  H1: 0.208718
+  H2: 0.208718

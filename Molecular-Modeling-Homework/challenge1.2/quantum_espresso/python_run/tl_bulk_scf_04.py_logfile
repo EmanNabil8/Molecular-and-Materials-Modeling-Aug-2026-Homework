@@ -1,0 +1,92 @@
+================================================================================
+SYSTEM INFORMATION
+================================================================================
+Platform: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+Processor: x86_64
+CPU Model: Intel(R) Core(TM) i7-4702MQ CPU @ 2.20GHz
+Total CPU cores (logical): 8
+Physical cores: 4
+Threads per core: 2
+CPU Frequency: 2195 MHz
+Total Memory: 7.7 GB
+================================================================================
+
+✓ Found pw.x at: /home/compchemisteman/miniforge3/envs/molmatmodel/bin/pw.x (from pw_configure.txt)
+
+Setting up Thallium calculation with spin-orbit coupling...
+Created bulk Thallium with 2 atoms
+
+================================================================================
+CPU CORE INFORMATION
+================================================================================
+Physical cores: 4
+Logical cores (with hyper-threading): 8
+================================================================================
+
+================================================================================
+BENCHMARK CONFIGURATION
+================================================================================
+Physical cores: 4
+Logical cores: 8
+Number of benchmarks to run: 3
+MPI values: [1, 2, 4]
+OMP values: [1]
+Combinations: [(1, 1), (2, 1), (4, 1)]
+================================================================================
+
+📊 Benchmark 1/3
+
+============================================================
+BENCHMARK: MPI=1, OMP=1
+============================================================
+Command: /home/compchemisteman/miniforge3/envs/molmatmodel/bin/pw.x -i qe_benchmark_mpi1_omp1/espresso.pwi > qe_benchmark_mpi1_omp1/pw.out
+✅ Benchmark completed: MPI=1, OMP=1
+   Wall Time: 88.80s
+   Efficiency: 0.99x
+
+📊 Benchmark 2/3
+
+============================================================
+BENCHMARK: MPI=2, OMP=1
+============================================================
+Command: mpirun  -np 2 /home/compchemisteman/miniforge3/envs/molmatmodel/bin/pw.x -i qe_benchmark_mpi2_omp1/espresso.pwi > qe_benchmark_mpi2_omp1/pw.out
+✅ Benchmark completed: MPI=2, OMP=1
+   Wall Time: 65.64s
+   Efficiency: 0.96x
+
+📊 Benchmark 3/3
+
+============================================================
+BENCHMARK: MPI=4, OMP=1
+============================================================
+Command: mpirun  -np 4 /home/compchemisteman/miniforge3/envs/molmatmodel/bin/pw.x -i qe_benchmark_mpi4_omp1/espresso.pwi > qe_benchmark_mpi4_omp1/pw.out
+✅ Benchmark completed: MPI=4, OMP=1
+   Wall Time: 72.50s
+   Efficiency: 0.95x
+
+✓ Results saved to benchmark_results.json
+
+================================================================================
+BENCHMARK SUMMARY
+================================================================================
+   MPI    OMP    Wall Time   Efficiency       Status
+--------------------------------------------------------------------------------
+     1      1        88.80s         0.99x    completed
+     2      1        65.64s         0.96x    completed
+     4      1        72.50s         0.95x    completed
+================================================================================
+
+🏆 Fastest calculation: MPI=2, OMP=1
+   Wall Time: 65.64s
+   Efficiency: 0.96x
+
+🏆 Best efficiency: MPI=1, OMP=1
+   Efficiency: 0.99x
+   Wall Time: 88.80s
+
+📊 Speedup relative to serial (1 MPI, 1 OMP): 88.80s
+   MPI= 2, OMP= 1:   1.35x speedup,    65.64s
+   MPI= 4, OMP= 1:   1.22x speedup,    72.50s
+   MPI= 1, OMP= 1:   1.00x speedup,    88.80s
+
+=== BENCHMARK FINISHED ===

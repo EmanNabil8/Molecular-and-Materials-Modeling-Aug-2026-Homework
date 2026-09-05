@@ -1,0 +1,67 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+============================================================
+MACE OPTIMIZATION
+============================================================
+Using Materials Project MACE for MACECalculator with /home/compchemisteman/.cache/mace/20231203mace128L1_epoch199model
+Using float32 for MACECalculator, which is faster but less accurate. Recommended for MD. Use float64 for geometry optimization.
+      Step     Time          Energy          fmax
+BFGS:    0 14:19:30      -14.159367        0.226164
+BFGS:    1 14:19:31      -14.160193        0.065138
+BFGS:    2 14:19:31      -14.160244        0.022163
+BFGS:    3 14:19:31      -14.160274        0.019356
+BFGS:    4 14:19:31      -14.160288        0.009003
+
+MACE Optimized Geometry
+----------------------------------------
+Potential Energy: -14.1603 eV
+O-H Bond Length: 0.9728 Å (average: 0.9728 Å)
+O-H Bond Length 2: 0.9728 Å
+H-H Distance: 1.5341 Å
+Bond Angle: 104.09°
+
+Comparison with experiment:
+  Bond length deviation: 0.0156 Å (1.63%)
+  Bond angle deviation: -0.43° (-0.41%)
+
+============================================================
+EMT OPTIMIZATION
+============================================================
+      Step     Time          Energy          fmax
+BFGS:    0 14:19:31        2.619811        7.738365
+BFGS:    1 14:19:31        1.912906        1.345448
+BFGS:    2 14:19:31        1.882033        0.403474
+BFGS:    3 14:19:31        1.879275        0.031663
+BFGS:    4 14:19:31        1.879253        0.009649
+
+EMT Optimized Geometry
+----------------------------------------
+Potential Energy: 1.8793 eV
+O-H Bond Length: 1.0993 Å (average: 1.0993 Å)
+O-H Bond Length 2: 1.0993 Å
+H-H Distance: 1.6484 Å
+Bond Angle: 97.14°
+
+Comparison with experiment:
+  Bond length deviation: 0.1421 Å (14.85%)
+  Bond angle deviation: -7.38° (-7.07%)
+
+============================================================
+COMPARISON SUMMARY
+============================================================
+Method          Bond Length (Å)      Bond Angle (°)       Energy (eV)    
+----------------------------------------------------------------------
+MACE            0.9728               104.09               -14.1603       
+EMT             1.0993               97.14                1.8793         
+Experimental    0.9572               104.52               N/A            
+----------------------------------------------------------------------
+
+Mean Absolute Errors (vs experiment):
+  MACE:  Bond length: 0.0156 Å, Angle: 0.43°
+  EMT:   Bond length: 0.1421 Å, Angle: 7.38°
+
+MACE is 9.1x more accurate for bond length
+MACE is 17.2x more accurate for bond angle
+
+Optimization complete! Trajectory files saved as:
+  - water_opt_mace.traj (MACE)
+  - water_opt_emt.traj (EMT)

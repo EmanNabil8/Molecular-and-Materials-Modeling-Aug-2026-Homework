@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp": "2026-08-30T15:51:26.287753",
+    "nproc": 4,
+    "omp_threads": 1,
+    "total_elapsed": 60.314764738082886,
+    "status": "completed",
+    "cpu_time": 54.93,
+    "wall_time": 57.81,
+    "efficiency": 0.9501816294758691,
+    "overhead": 2.5047647380828835,
+    "kpoints": 50,
+    "bands": 34,
+    "actual_mpi": 4,
+    "actual_omp": 1
+  },
+  {
+    "timestamp": "2026-08-30T16:08:12.997292",
+    "nproc": 1,
+    "omp_threads": 1,
+    "total_elapsed": 91.16440844535828,
+    "status": "completed",
+    "cpu_time": 88.03999999999999,
+    "wall_time": 88.8,
+    "efficiency": 0.9914414414414414,
+    "overhead": 2.364408445358279,
+    "kpoints": 50,
+    "bands": 34,
+    "actual_mpi": 1,
+    "actual_omp": 1
+  },
+  {
+    "timestamp": "2026-08-30T16:09:20.786506",
+    "nproc": 2,
+    "omp_threads": 1,
+    "total_elapsed": 67.78766918182373,
+    "status": "completed",
+    "cpu_time": 63.18,
+    "wall_time": 65.64,
+    "efficiency": 0.9625228519195612,
+    "overhead": 2.14766918182373,
+    "kpoints": 50,
+    "bands": 34,
+    "actual_mpi": 2,
+    "actual_omp": 1
+  },
+  {
+    "timestamp": "2026-08-30T16:10:35.482034",
+    "nproc": 4,
+    "omp_threads": 1,
+    "total_elapsed": 74.69434881210327,
+    "status": "completed",
+    "cpu_time": 68.59,
+    "wall_time": 72.5,
+    "efficiency": 0.9460689655172414,
+    "overhead": 2.1943488121032715,
+    "kpoints": 50,
+    "bands": 34,
+    "actual_mpi": 4,
+    "actual_omp": 1
+  }
+]
