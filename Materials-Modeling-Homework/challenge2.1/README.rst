@@ -19,9 +19,13 @@ Challenge 2.1
 			Successfully ended.
 
 ::Conclusion::
+
 | "ecutwfc" | Total energy (Ry) | Fermi energy (eV) |
+
 | --------: | ----------------: | ----------------: |
+
 |     30 Ry |      -22.65169249 |            6.7973 |
+
 |     60 Ry |      -22.65193261 |            6.7962 |
 
 (b) ASE
