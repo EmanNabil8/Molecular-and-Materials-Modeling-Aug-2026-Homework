@@ -20,9 +20,16 @@ set 'degauss': 0.005,
 			Successfully ended.
 
 ::RESULTS::
+
 === Electronic Structure Analysis Complete ===
+
 Generated files:
+
 - Charge density (from SCF): charge_density.cube
+
 - Löwdin Charges (from SCF): lowdin.out
+
 - Total DOS (from NSCF): total_dos.dat --> Fermi enrgy was shifted to zero & visualized using python script by ChatGPT.
+
 - PDOS files (from NSCF): pdos_results/ --> Fermi enrgy was shifted to zero & visualized using python script by ChatGPT.
+
