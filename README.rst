@@ -21,7 +21,7 @@ Author
 
 **Eman Nabil, PhD**
 
-Postdoctoral Researcher in Computational Chemistry
+Postdoctoral Researcher in Computational Quantum Chemistry
 
 PhD in Physical Chemistry, Faculty of Science, Alexandria University,
 Egypt
