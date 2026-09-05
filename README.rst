@@ -19,7 +19,7 @@ input files, software details, execution instructions, and main results.
 Author
 ------
 
-**Eman Nabil, PhD**
+**Eman Nabil**
 
 Postdoctoral Researcher in Computational Quantum Chemistry
 
