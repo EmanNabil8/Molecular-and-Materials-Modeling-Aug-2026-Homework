@@ -16,8 +16,11 @@ cp ~/Molecular-and-Materials-Modeling-2026-August/molecular-modeling/ase_mace/as
 			Successfull run and reasonable results. 
 
 ::Summary of Results::
+
 Property		EMT			MACE		Experiment
+
 C–H bond length	1.1515 Å	1.0931 Å	1.0870 Å
+
 
 ::Conclusion::
 MACE is superior for both bond length and bond energy.
